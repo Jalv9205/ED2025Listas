@@ -6,10 +6,10 @@
         {
             ListasDoblesLigadas<int> lista = new ListasDoblesLigadas<int>();
 
-            lista.AgregarAlFinal(1);
-            lista.AgregarAlFinal(2);
-            lista.AgregarAlFinal(3);
-            lista.AgregarAlInicio(0);
+            lista.AgregarAlFinal(13);
+            lista.AgregarAlFinal(25);
+            lista.AgregarAlFinal(39);
+            lista.AgregarAlInicio(102);
 
             Console.WriteLine("Lista desde el principio:");
             lista.ImprimirDesdeInicio();
@@ -17,8 +17,8 @@
             Console.WriteLine("Lista desde el final:");
             lista.ImprimirDesdeFin();
 
-            lista.Eliminar(2);
-            Console.WriteLine("Lista después de eliminar el 2:");
+            lista.Eliminar(102);
+            Console.WriteLine("Lista después de eliminar el 102:");
             lista.ImprimirDesdeInicio();
         }
     }
