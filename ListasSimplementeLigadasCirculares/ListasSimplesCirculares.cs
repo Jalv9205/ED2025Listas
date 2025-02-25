@@ -14,6 +14,7 @@ namespace ListasSimplementeLigadasCirculares
             cabeza = null;
         }
 
+        //Método para agregar un nodo al final de la lista
         public void Agregar(int datos)
         {
             Nodo nuevoNodo = new Nodo(datos);
@@ -35,6 +36,7 @@ namespace ListasSimplementeLigadasCirculares
             }
         }
 
+        //Método para mostrar los datos de la lista
         public void Mostrar()
         {
             if (cabeza == null)
@@ -51,6 +53,7 @@ namespace ListasSimplementeLigadasCirculares
             } while (temp != cabeza);
         }
 
+        //Para eliminar un nodo de la lista
         public void Eliminar(int datos)
         {
             if (cabeza == null)

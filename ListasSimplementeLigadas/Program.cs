@@ -9,7 +9,6 @@ namespace ListasSimplementeLigadas
             Lista lista = new Lista();
 
             lista.Agregar("A");
-
             lista.Agregar("B");
             lista.Agregar("C");
             lista.Agregar("D");

@@ -17,6 +17,7 @@ namespace ListasDoblementeLigadas
             cola = null;
         }
 
+        //Se agrega al final de la lista
         public void AgregarAlFinal(T valor)
         {
             Nodo<T> nuevoNodo = new Nodo<T>(valor);
@@ -33,6 +34,7 @@ namespace ListasDoblementeLigadas
             }
         }
 
+        //Se agrega al principio de la lista
         public void AgregarAlInicio(T valor)
         {
             Nodo<T> nuevoNodo = new Nodo<T>(valor);
@@ -49,6 +51,7 @@ namespace ListasDoblementeLigadas
             }
         }
 
+        //Se imprime la lista desde el principio
         public void ImprimirDesdeInicio()
         {
             Nodo<T> actual = cabeza;
@@ -60,6 +63,7 @@ namespace ListasDoblementeLigadas
             Console.WriteLine();
         }
 
+        //Se imprime la lista desde el final
         public void ImprimirDesdeFin()
         {
             Nodo<T> actual = cola;
@@ -71,6 +75,7 @@ namespace ListasDoblementeLigadas
             Console.WriteLine();
         }
 
+        //Para eliminar un nodo de la lista
         public void Eliminar(T valor)
         {
             Nodo<T> actual = cabeza;

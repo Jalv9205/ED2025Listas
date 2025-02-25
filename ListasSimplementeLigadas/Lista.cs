@@ -11,6 +11,7 @@ namespace ListasSimplementeLigadas
             _nodoInicial = new Nodo();
         }
 
+        //Se va agregando los datos al listado en su nodo correspondiente
         public void Agregar(string dato)
         {
             Nodo nodoActual = _nodoInicial;
@@ -26,6 +27,7 @@ namespace ListasSimplementeLigadas
             nodoActual.Siguiente = nodoNuevo;
         }
 
+        //Validacion para saber si esta vacio el nodo
         public bool EstaVacio() 
         {
             //if (_nodoInicial.Siguiente == null)
@@ -37,11 +39,14 @@ namespace ListasSimplementeLigadas
             return (_nodoInicial.Siguiente == null); 
         }
 
+        //Para vaciar el nodo
         public void Vaciar()
         {
             _nodoInicial.Siguiente = null;
         }
 
+
+        //Metodo para buscar el nodo a eliminar
         public Nodo? Buscar(string dato) 
         {
             if (!EstaVacio())
@@ -61,6 +66,7 @@ namespace ListasSimplementeLigadas
             return null;
         }
 
+        //Se busca el nodo anterior para dirigir al otro nodo
         private Nodo? BuscarAnterior(string dato)
         {
             if (!EstaVacio())
@@ -80,6 +86,7 @@ namespace ListasSimplementeLigadas
             return null;
         }
 
+        //Metodo para eliminar un dato en el nodo correspondiente
         public void Eliminar(string dato)
         {
             if (!EstaVacio())
@@ -99,6 +106,7 @@ namespace ListasSimplementeLigadas
             }
         }
 
+        //Metodo para obtener los valores de la lista
         public string ObtenerValores() 
         {
             StringBuilder datos = new StringBuilder();

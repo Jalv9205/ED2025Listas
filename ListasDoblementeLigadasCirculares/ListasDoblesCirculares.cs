@@ -15,6 +15,7 @@ namespace ListasDoblementeLigadasCirculares
             cabeza = null;
         }
 
+        //Se agrega al final de la lista
         public void AgregarAlFinal(T valor)
         {
             Nodo<T> nuevoNodo = new Nodo<T>(valor);
@@ -37,6 +38,7 @@ namespace ListasDoblementeLigadasCirculares
             }
         }
 
+        //Se agrega al inicio de la lista
         public void AgregarAlInicio(T valor)
         {
             Nodo<T> nuevoNodo = new Nodo<T>(valor);
@@ -62,6 +64,7 @@ namespace ListasDoblementeLigadasCirculares
             }
         }
 
+        //Se imprime la lista desde el principio
         public void ImprimirDesdeInicio()
         {
             if (cabeza == null)
@@ -80,6 +83,7 @@ namespace ListasDoblementeLigadasCirculares
             Console.WriteLine();
         }
 
+        //Se imprime la lista desde el final
         public void ImprimirDesdeFin()
         {
             if (cabeza == null)
@@ -98,6 +102,7 @@ namespace ListasDoblementeLigadasCirculares
             Console.WriteLine();
         }
 
+        //Para eliminar un nodo de la lista
         public void Eliminar(T valor)
         {
             if (cabeza == null)
